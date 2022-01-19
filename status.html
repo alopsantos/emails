@@ -138,11 +138,18 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO ENTREGUE</strong>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">Pedido concluido com
-                sucesso.</span>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">Tempo estimoado para
-                entrega:
-                6 dias.</span>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, acabamos de receber a confirma&ccedil;&atilde;o dos correios que seu pedido
+                foi entregue.
+
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                Aguardamos a sua opini&atilde;o sobre a compra, depois que voc&ecirc; provar as peças, aceitamos
+                criticas e elogios para que possomas estar melhorando sempre.
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                <a style="text-decoration: none; cursor: pointer; color: #F5A8C6;" title="Link para dar a opinião sobre o produte e pedido" href="https://forms.gle/mkiwijQNajmDE63MA">Link para dar minha opini&atilde;o. 🙏</a>
+              </p>
             </div>
           </div>
         </td>
@@ -303,11 +310,17 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO AGURADANDO RETIRADA</strong>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">Pedido concluido com
-                sucesso.</span>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">Tempo estimoado para
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, seu pedido est&aacute; aguardando retirada, por favor, verifique o
+                endere&ccedil;o para retirada consultando
+                o numero do rastreio {{Objeto_Codigo}} junto aos correios neste <a
+                  style="text-decoration: none; cursor: pointer; color: #F5A8C6;"
+                  href="https://painel.findmypack.com.br/objetos/{{Objeto_Codigo}}#"
+                  title="Link Para Rastreio do Pedido">link aqui. 🌐</a>
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">Tempo estimoado para
                 entrega:
-                6 dias.</span>
+                6 dias.</p>
             </div>
           </div>
         </td>
@@ -350,11 +363,15 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">VOCÊ ESTAVA AUSENTE</strong>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">Pedido concluido com
-                sucesso.</span>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">Tempo estimoado para
-                entrega:
-                6 dias.</span>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, seu pedido saiu pra entrega mas n&atilde;o havia ninguem para receb&ecirc-lo,
+                uma nova tentativa ser&aacute; realizada no pr&oacute;ximo dia &uacute;til.
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                São tr&ecirc;s tentativas que os correios faram antes de devolv&ecirc;-lo, caso isso ocorra o seu pedido
+                fica dispon&iacute;vel
+                na agência dos correios mais pr&oacute;xima de voc&ecirc; por mais tr&ecirc;s dias, aguardando retirada.
+              </p>
             </div>
           </div>
         </td>
@@ -413,11 +430,16 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO SAIU PRA ENTREGA</strong>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">Pedido concluido com
-                sucesso.</span>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">Tempo estimoado para
-                entrega:
-                6 dias.</span>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, seu pedido saiu para entrega, certifique-se de que haver&aacute; algu&eacute;m
+                no endere&ccedil;o para receb&ecirc;-lo.
+              </p>
+              <span style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                S&atilde;o tr&ecirc;s tentativas que os correios faram antes de devolv&ecirc;-lo, caso isso ocorra o seu
+                pedido fica dispon&iacute;vel
+                na ag&ecirc;ncia dos correios mais pr&oacute;xima de voc&ecirc; por mais tr&ecirc;s dias, aguardando
+                retirada.
+              </span>
             </div>
           </div>
         </td>
@@ -582,14 +604,18 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO ENVIADO</strong>
-              <span
-                style="color: #979797; font-size: 10px; display: block; margin-top: 3px; font-family: 'Roboto', sans-serif;">Pedido
-                concluido com
-                sucesso.</span>
-              <span
-                style="color: #979797; font-size: 10px; display: block; margin-top: 15px; font-family: 'Roboto', sans-serif;">Tempo
-                estimoado para entrega:
-                6 dias.</span>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, tudo bem com você?
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                Seu pedido {{Pedido}}, j&aacute; foi enviado e segue abaixo o c&oacute;digo de rastreio, mas pode ficar
+                tranquila que iremos te mante informada autom&aacute;ticamente por aqui:
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                <strong style="color: #343434;">C&oacute;digo de Rastreio:</strong> {{Objeto_Codigo}}.<br />
+                <strong style="color: #343434;">Prazo previsto para a entrega &eacute; at&eacute;:</strong>
+                {{Objeto_DataPrevisao}}.
+              </p>
             </div>
           </div>
         </td>
@@ -641,12 +667,21 @@
             </div>
             <div class="status__description" style="width: 320px;">
               <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO FEITO</strong>
-              <span style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
-                Pedido concluido com sucesso.</span>
-              <span
-                style="color: #979797; font-size: 10px; font-family: 'Roboto'; display: block; margin-top: 15px;">Tempo
-                estimoado para entrega:
-                6 dias.</span>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                <strong style="color: #343434;">Pedido:</strong> {{Pedido}} <br />
+                {{Destinatario_Nome}}
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 3px;">
+                <strong style="color: #343434;"></strong>
+              </p>
+              <p style="color: #979797; font-size: 10px; display: block; margin-top: 15px;">
+                <strong style="color: #343434;">Endere&ccedil;o:</strong> {{Destinatario_Endereco}},
+                {{Destinatario_Numero}}.<br />
+                <strong style="color: #343434;">CEP:</strong> {{Destinatario_Cep}} / {{Destinatario_Cidade}} |
+                {{Destinatario_Estado}}.<br />
+                <strong style="color: #343434;">Prazo previsto para a entrega &eacute; at&eacute;:</strong>
+                {{Objeto_DataPrevisao}}.
+              </p>
             </div>
           </div>
         </td>
@@ -706,7 +741,7 @@
       <tr>
         <td align="center" colspan="3" style="background: #fAFAFA;">
           <p
-            style="color:#97979797; font-family: 'Roboto', sans-serif; font-size: 10px; margin: 30px; text-align: justify; max-width: 600px;">
+            style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 10px; margin: 30px; text-align: justify; max-width: 600px;">
             <b style="color: #343434; font-family: 'Poppins', sans-serif;">
               Politíca de troca:</b> A Estação Store disponibiliza o prazo de até 7 dias
             para desistência ou troca por outra mercadoria, nos termos do artigo 49
@@ -716,7 +751,7 @@
           </p>
 
           <p
-            style="color:#97979797; font-family: 'Roboto', sans-serif; font-size: 10px; margin: 30px; text-align: justify; max-width: 600px;">
+            style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 10px; margin: 30px; text-align: justify; max-width: 600px;">
             <b style="color: #343434; font-family: 'Poppins', sans-serif;">
               Fale conosco:</b> Você pode tirar suas dúvida
             sobre produtos ou pedidos
@@ -724,7 +759,7 @@
             de segunda a sexta-feira das 08h às 17:30h. Exceto feriados.
           </p>
 
-          <p style="color:#97979797; font-family: 'Roboto', sans-serif; font-size: 10px; margin-top: 30px;">
+          <p style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 12px; margin-top: 30px;">
             <a style="color: #343434; text-decoration: none;"
               href="www.estacaodamodastore.com.br">www.estacaodamodastore.com.br</a><br />
             <span style="margin-top: 10px; display: block;">(45) 3541-2940</span>
