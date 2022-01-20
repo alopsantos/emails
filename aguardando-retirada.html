@@ -1,192 +1,223 @@
-<!-- So that mobile webkit will display zoomed in --><!-- disable auto telephone linking in iOS --><!-- 100% wrapper (grey background) -->
-<table bgcolor="#fff" border="0" cellspacing="0" style="width: 100%">
-  <tbody>
-    <tr>
-      <td
-        align="center"
-        bgcolor="#fff"
-        style="background-color: #ffffff; color: #808080; vertical-align: top"
-      >
-        <!-- 600px container (white background) -->
-        <table
-          bgcolor="#fff"
-          border="0"
-          cellpadding="0"
-          cellspacing="0"
-          style="max-width: 600px"
-        >
-          <tbody>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objeto Aguardando Retirada</title>
+</head>
+
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+  </style>
+
+  <table border="0" align="center" width="100%">
+    <thead>
+      <tr>
+        <th colspan="3" style="background: #fAFAFA; height: 90px;">
+          <img width="205" src="https://estacaodamodastore.vteximg.com.br/arquivos/logo.svg" alt="">
+        </th>
+      </tr>
+    </thead>
+
+    <tbody style="font-family: 'Poppins', sans-serif; font-weight: 700;">
+
+      <tr align="center">
+        <td colspan="3" style="height: 90px;">
+          <strong style="color: #343434; font-size: 16px;">STATUS DO PEDIDO</strong><br />
+          <span style="color: #979797; font-size: 14px; font-family: 'Roboto';">#{{Pedido}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" height="100">&nbsp;</td>
+      </tr>
+
+
+
+
+      <!-- Pedido Aguardando Retirada -->
+      <tr style="background-color: #fffffe;">
+        <td colspan="3">
+          <div style=" display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;">
+            <div class="status__timeline">
+              <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-confirmado.svg"
+                alt="Icone do status do pedido" title="Icone do status do pedido">
+            </div>
+            <div class="status__icon">
+              <img src="https://www.estacaodamodastore.com.br/arquivos/icone-aguardando-retirada.svg"
+                alt="Icone do status do pedido" title="Icone Pedido aguardando retirada">
+
+            </div>
+            <div class="status__description" style="width: 320px; padding: 10px 0;">
+              <strong style="color: #343434; font-size: 16px; display: block;">PEDIDO AGURADANDO RETIRADA</strong>
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
+                Oi {{Destinatario_Nome}}, seu pedido est&aacute; aguardando retirada, por favor, verifique o
+                endere&ccedil;o para retirada consultando
+                o numero do rastreio {{Objeto_Codigo}} junto aos correios neste <a
+                  style="text-decoration: none; cursor: pointer; color: #F5A8C6;"
+                  href="https://painel.findmypack.com.br/objetos/{{Objeto_Codigo}}#"
+                  title="Link Para Rastreio do Pedido">link aqui.</a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- Pedido Aguardando Retirada -->
+
+      <!-- Pedido Enviado-->
+      <tr>
+        <td colspan="3">
+          <div style=" display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px;">
+            <div class="status__timeline">
+              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/status-check-confirmado.svg"
+                alt="Icone do status do pedido">
+            </div>
+            <div class="status__icon">
+              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/icone-pedido-enviado.svg"
+                alt="Icone de Pedido Enviado">
+            </div>
+            <div class="status__description" style="width: 320px;  padding: 10px 0;">
+              <strong style="color: #343434; font-size: 16px; display: block;">PEDIDO ENVIADO</strong>
+
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
+                <strong style="color: #343434;">C&oacute;digo de Rastreio:</strong> {{Objeto_Codigo}}.
+              </p>
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
+                <strong style="color: #343434;">Prazo previsto para a entrega &eacute; at&eacute;:</strong>
+                {{Objeto_DataPrevisao}}.
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- Pedido Enviado-->
+
+      <!-- Pedido Feito-->
+      <tr style="background-color: #fffffe;">
+        <td colspan="3">
+          <div style=" display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px;">
+            <div class="status__timeline">
+              <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-inativo.svg"
+                alt="Icone do status do pedido" title="Icone do status do pedido">
+            </div>
+            <div class="status__icon">
+              <img src="https://www.estacaodamodastore.com.br/arquivos/icone-pedido-feito.svg"
+                alt="Icone do status do pedido" title="Icone Pedido Enviado">
+            </div>
+            <div class="status__description" style="width: 320px;  padding: 10px 0;">
+              <strong style="color: #343434; font-size: 16px; display: block;">PEDIDO FEITO</strong>
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
+                <strong style="color: #343434;">Pedido:</strong> {{Pedido}} <br />
+                {{Destinatario_Nome}}
+              </p>
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
+                <strong style="color: #343434;"></strong>
+              </p>
+              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
+                <strong style="color: #343434;">Endere&ccedil;o:</strong> {{Destinatario_Endereco}},
+                {{Destinatario_Numero}}.<br />
+                <strong style="color: #343434;">CEP:</strong> {{Destinatario_Cep}} / {{Destinatario_Cidade}} |
+                {{Destinatario_Estado}}.<br />
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- Pedido Feito-->
+
+      <tr>
+        <td colspan="3" height="100">&nbsp;</td>
+      </tr>
+
+
+      <tr>
+        <td align="center" colspan="3" style="background: #fAFAFA; height: 90px;">
+          <table>
             <tr>
-              <td
-                align="left"
-                bgcolor="#ffffff"
-                style="
-                  background-color: #ffffff;
-                  color: #808080;
-                  font-family: 'Oswald', sans-serif;
-                  font-size: 16px;
-                  line-height: 19px;
-                  padding-left: 10px;
-                  padding-right: 3px;
-                "
-              >
-                &nbsp;
-                <table
-                  border="0"
-                  cellpadding="0"
-                  cellspacing="0"
-                  style="width: 100%"
-                >
-                  <tbody>
-                    <tr>
-                      <td>
-                        <table
-                          align="left"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          style="
-                            border-left: 0px;
-                            border-right: 0px;
-                            border: none;
-                            padding-bottom: 10px;
-                            width: 100%;
-                          "
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <a href="https://www.estacaodamodastore.com.br"
-                                  ><img
-                                    alt="Estação Store"
-                                    border="0"
-                                    src="https://estacaodamodastore.vteximg.com.br/arquivos/envios-estacao-store.jpg"
-                                    style="
-                                      border-left: 0px;
-                                      border-right: 0px;
-                                      border: none;
-                                      width: 100%;
-                                    "
-                                /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <!-- ### BEGIN CONTENT ### -->
-                        <table
-                          align="left"
-                          bgcolor="#ffffff"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          style="
-                            margin-bottom: 0;
-                            padding-bottom: 0;
-                            width: 100%;
-                          "
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <div
-                                  style="
-								  	margin-top: 20px;
-                                    color: #818181;
-                                    font-family: sans-serif;
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                    letter-spacing: 1px;
-                                  "
-                                >
-                                  Oi {{Destinatario_Nome}},<br/>
-								  Seu pedido, {{Pedido}}, est&aacute; aguardando retirada,
-                                  por favor, verifique o endere&ccedil;o para
-                                  retirada consultando o n&uacute;mero do objeto
-                                  nos Correios.
-                                </div>
-                                <br />
-                                <span
-                                  style="
-                                    color: #EF1C8f;
-                                    display: inline-block;
-                                    font-size: 16px;
-                                  "
-                                  >Status:<br />
-                                  {{Movimento_Descricao}}</span
-                                ><br />
-                                <br />
-                                <br />
-                                <strong
-                                  style="
-                                    color: #818181;
-                                    font-family: sans-serif;
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                  "
-                                  >C&oacute;digo de Rastreio:
-                                  <strong>{{Objeto_Codigo}}</strong>.</strong
-                                >
-								<br />
-
-                                <div
-                                  style="
-                                    color: #808080;
-                                    padding-bottom: 0px;
-                                    padding-top: 3px;
-                                  "
-                                >
-                                  O prazo previsto para a entrega &eacute;
-                                  at&eacute; {{Objeto_DataPrevisao}}
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td style="color: #808080">
-                        <div
-                          style="
-                            font-size: 15px;
-                            color: #EF1C8F;
-                            font-weight: lighter;
-                            margin-bottom: 10px;
-                          "
-                        >
-                          ATEN&Ccedil;&Atilde;O: Lembramos que pedidos que
-                          contenham mais de um produto podem ser faturados em
-                          notas distintas e entregues separadamente.
-                        </div>
-                        <br />
-                        <div style="font-size: 14px">Atenciosamente,</div>
-
-                        <div style="font-size: 14px">
-                          Equipe Esta&ccedil;&atilde;o Store.
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <td>
+                <a href="https://www.instagram.com/estacaostore/" alt="Icone do instagram"
+                  title="Siga nosso perfil no instagram.">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.6667 2.66669H9.33332C5.65143 2.66669 2.66666 5.65146 2.66666 9.33335V22.6667C2.66666 26.3486 5.65143 29.3334 9.33332 29.3334H22.6667C26.3486 29.3334 29.3333 26.3486 29.3333 22.6667V9.33335C29.3333 5.65146 26.3486 2.66669 22.6667 2.66669Z"
+                      stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M21.3333 15.16C21.4979 16.2696 21.3083 17.4029 20.7917 18.3987C20.275 19.3944 19.4575 20.2019 18.4555 20.7062C17.4535 21.2106 16.3179 21.3861 15.2104 21.2079C14.1028 21.0297 13.0797 20.5068 12.2864 19.7135C11.4932 18.9203 10.9703 17.8971 10.7921 16.7896C10.6139 15.682 10.7894 14.5465 11.2938 13.5445C11.7981 12.5424 12.6056 11.725 13.6013 11.2083C14.597 10.6916 15.7303 10.5021 16.84 10.6666C17.9719 10.8345 19.0198 11.3619 19.8289 12.1711C20.638 12.9802 21.1655 14.0281 21.3333 15.16Z"
+                      stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M23.3333 8.66669H23.3467" stroke="#343434" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </td>
+              <td>
+                <a href="https://facebook.com/estacaostore" alt="Icone do facebook"
+                  title="Acessar nossa pagina no facebook" style="margin: 0 20px;">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 2.66669H20C18.2319 2.66669 16.5362 3.36907 15.286 4.61931C14.0357 5.86955 13.3333 7.56524 13.3333 9.33335V13.3334H9.33334V18.6667H13.3333V29.3334H18.6667V18.6667H22.6667L24 13.3334H18.6667V9.33335C18.6667 8.97973 18.8072 8.64059 19.0572 8.39055C19.3073 8.1405 19.6464 8.00002 20 8.00002H24V2.66669Z"
+                      stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </td>
+              <td>
+                <a href="https://www.youtube.com/c/estacaostoreoficial" alt="Icone do youtube"
+                  title="Acessar nosso canal no youtube.">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M30.0533 8.55998C29.895 7.92719 29.5724 7.34741 29.1182 6.87919C28.664 6.41097 28.0943 6.07089 27.4667 5.89331C25.1733 5.33331 16 5.33331 16 5.33331C16 5.33331 6.82668 5.33331 4.53334 5.94665C3.90567 6.12423 3.33598 6.4643 2.8818 6.93252C2.42763 7.40074 2.10506 7.98053 1.94668 8.61331C1.52696 10.9407 1.32166 13.3017 1.33334 15.6666C1.31838 18.0494 1.5237 20.4284 1.94668 22.7733C2.12129 23.3864 2.45108 23.9442 2.9042 24.3926C3.35732 24.8411 3.91844 25.1651 4.53334 25.3333C6.82668 25.9466 16 25.9466 16 25.9466C16 25.9466 25.1733 25.9466 27.4667 25.3333C28.0943 25.1557 28.664 24.8157 29.1182 24.3474C29.5724 23.8792 29.895 23.2994 30.0533 22.6666C30.4698 20.3568 30.6751 18.0138 30.6667 15.6666C30.6816 13.2839 30.4763 10.9049 30.0533 8.55998V8.55998Z"
+                      stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13 20.0266L20.6667 15.6666L13 11.3066V20.0266Z" stroke="#343434" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
               </td>
             </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<!--/600px container --><!--/100% wrapper-->
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="3" style="background: #fAFAFA;">
+          <p
+            style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 14px; margin: 30px; text-align: justify; max-width: 600px;">
+            <b style="color: #343434; font-family: 'Poppins', sans-serif;">
+              Pol&iacute;tica de troca:</b> A Estação Store disponibiliza o prazo de até 7 dias
+            para desistência ou troca por outra mercadoria, nos termos do artigo 49
+            do Código de Defesa do Consumidor. Caso você necessite trocar seu
+            produto, entre em contato conosco através do nosso Whatsapp
+            <a style="text-decoration: none; cursor: pointer; color: #F5A8C6;"
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=554535412940" title="Whatsapp para duvidas">disponível
+              aqui</a>.
+          </p>
+
+          <p
+            style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 14px; margin: 30px; text-align: justify; max-width: 600px;">
+            <b style="color: #343434; font-family: 'Poppins', sans-serif;">
+              Fale conosco:</b> Você pode tirar suas dúvida
+            sobre produtos ou pedidos
+            em nosso Whatsapp. O expediente da loja virtual é
+            de segunda a sexta-feira das 08h às 17:30h. Exceto feriados.
+          </p>
+
+          <p style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 14px; margin-top: 30px;">
+            <a style="color: #343434; text-decoration: none;"
+              href="https://www.estacaodamodastore.com.br">www.estacaodamodastore.com.br</a><br />
+            <span style="margin-top: 10px; display: block;">(45) 3541-2940</span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
