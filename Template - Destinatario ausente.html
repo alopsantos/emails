@@ -30,117 +30,146 @@
 
     <tbody style="font-family: 'Poppins', sans-serif; font-weight: 700;">
 
-      
-      <tr>
-        <td colspan="3" height="100">&nbsp;</td>
-      </tr>
-
-      <!-- Você estava Ausente -->
-      <tr>
-        <td colspan="3">
-          <div style=" display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;">
-            <div class="status__timeline">
-              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/status-check-confirmado.svg"
-                alt="Icone do status do pedido">
-            </div>
-            <div class="status__icon">
-              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/icone-destinatario-ausente.svg"
-                alt="Icone de Pedido Enviado">
-            </div>
-            <div class="status__description" style="width: 320px;">
-              <strong style="color: #343434; font-size: 16px; display: block;">VOCÊ ESTAVA AUSENTE</strong>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
-                Oi {{Destinatario_Nome}}, seu pedido saiu pra entrega mas n&atilde;o havia ningu&eacute;m para receb&ecirc-lo,
-                uma nova tentativa ser&aacute; realizada no pr&oacute;ximo dia &uacute;til.
-              </p>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
-                São tr&ecirc;s tentativas que os correios faram antes de devolv&ecirc;-lo, caso isso ocorra o seu pedido
-                fica dispon&iacute;vel
-                na agência dos correios mais pr&oacute;xima de voc&ecirc; por mais tr&ecirc;s dias, aguardando retirada.
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <!-- Você estava Ausente -->
-
-      <!-- Pedido Enviado-->
-      <tr>
-        <td colspan="3">
-          <div style=" display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 100px;">
-            <div class="status__timeline">
-              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/status-check-confirmado.svg"
-                alt="Icone do status do pedido">
-            </div>
-            <div class="status__icon">
-              <img src="https://estacaodamodastore.vteximg.com.br/arquivos/icone-pedido-enviado.svg"
-                alt="Icone de Pedido Enviado">
-            </div>
-            <div class="status__description" style="width: 320px;  padding: 10px 0;">
-              <strong style="color: #343434; font-size: 16px; display: block;">PEDIDO ENVIADO</strong>
-
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
-                <strong style="color: #343434;">C&oacute;digo de Rastreio:</strong> {{Objeto_Codigo}}.
-              </p>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
-                <strong style="color: #343434;">Prazo previsto para a entrega &eacute; at&eacute;:</strong>
-                {{Objeto_DataPrevisao}}.
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <!-- Pedido Enviado-->
-
-      <!-- Pedido Feito-->
-      <tr style="background-color: #fffffe;">
-        <td colspan="3">
-          <div style=" display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 100px;">
-            <div class="status__timeline">
-              <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-inativo.svg"
-                alt="Icone do status do pedido" title="Icone do status do pedido">
-            </div>
-            <div class="status__icon">
-              <img src="https://www.estacaodamodastore.com.br/arquivos/icone-pedido-feito.svg"
-                alt="Icone do status do pedido" title="Icone Pedido Enviado">
-            </div>
-            <div class="status__description" style="width: 320px;  padding: 10px 0;">
-              <strong style="color: #343434; font-size: 16px; display: block;">PEDIDO FEITO</strong>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
-                <strong style="color: #343434;">Pedido:</strong> {{Pedido}} <br />
-                {{Destinatario_Nome}}
-              </p>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 3px;">
-                <strong style="color: #343434;"></strong>
-              </p>
-              <p style="color: #979797; font-size: 14px; display: block; margin-top: 15px;">
-                <strong style="color: #343434;">Endere&ccedil;o:</strong> {{Destinatario_Endereco}},
-                {{Destinatario_Numero}}.<br />
-                <strong style="color: #343434;">CEP:</strong> {{Destinatario_Cep}} / {{Destinatario_Cidade}} |
-                {{Destinatario_Estado}}.<br />
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <!-- Pedido Feito-->
 
       <tr>
         <td colspan="3" height="100">&nbsp;</td>
       </tr>
 
+      <!-- Você estava Ausente -->
+      <tr style="background-color: #fffffe;" align="center">
+        <td colspan="3">
+          <table>
+            <tr>
+              <td width="15%"></td>
+              <td>
+                <table>
+                  <tr>
+                    <td width="10%" align="center">
+                      <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-confirmado.svg"
+                        alt="Icone do status do pedido" title="Icone do status do pedido">
+                    </td>
+                    <td width="20%" style="padding:0 20px;" align="center">
+                      <img src="https://estacaodamodastore.vteximg.com.br/arquivos/icone-destinatario-ausente.svg"
+                        alt="Icone de Pedido Enviado">
+                    </td>
+                    <td width="600" align="left">
+                      <strong style="color: #343434; font-size: 14px; display: block;">VOCÊ ESTAVA AUSENTE</strong>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 3px;">
+                        Oi {{Destinatario_Nome}}, seu pedido saiu pra entrega mas n&atilde;o havia ningu&eacute;m para
+                        receb&ecirc-lo,
+                        uma nova tentativa ser&aacute; realizada no pr&oacute;ximo dia &uacute;til.
+                      </p>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 15px;">
+                        São tr&ecirc;s tentativas que os correios far&atilde;o antes de devolv&ecirc;-lo, caso isso ocorra o
+                        seu pedido
+                        fica dispon&iacute;vel
+                        na agência dos correios, a mais pr&oacute;xima de voc&ecirc;, por mais tr&ecirc;s dias, aguardando
+                        a retirada.
+                      </p>
+                      <p style="font-size: 12px; color: #979797; font-family: 'Roboto', sans-serif;">
+                        <strong
+                          style="color: #343434; font-size: 14px; font-family: 'Poppins', sans-serif;">Status:</strong>
+                        {{Movimento_Descricao}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="15%"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Você estava Ausente -->
+
+      <!-- Pedido Enviado-->
+      <tr style="background-color: #fffffe;" align="center">
+        <td colspan="3">
+          <table>
+            <tr>
+              <td width="15%"></td>
+              <td>
+                <table>
+                  <tr>
+                    <td width="10%" align="center">
+                      <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-confirmado.svg"
+                        alt="Icone do status do pedido" title="Icone do status do pedido">
+                    </td>
+                    <td width="20%" style="padding:0 20px;" align="center">
+                      <img src="https://estacaodamodastore.vteximg.com.br/arquivos/icone-pedido-enviado.svg"
+                        alt="Icone de Pedido Enviado">
+                    </td>
+                    <td width="600" align="left">
+                      <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO ENVIADO</strong>
+
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 15px;">
+                        <strong style="color: #343434;">C&oacute;digo de Rastreio:</strong> {{Objeto_Codigo}}.
+                      </p>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 15px;">
+                        <strong style="color: #343434;">Prazo previsto para a entrega &eacute; at&eacute;:</strong>
+                        {{Objeto_DataPrevisao}}.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="15%"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Pedido Enviado-->
+
+      <!-- Pedido Feito-->
+      <tr style="background-color: #fffffe;" align="center">
+        <td colspan="3">
+          <table>
+            <tr>
+              <td width="15%"></td>
+              <td>
+                <table>
+                  <tr>
+                    <td width="10%" align="center">
+                      <img src="https://www.estacaodamodastore.com.br/arquivos/status-check-inativo.svg"
+                        alt="Icone do status do pedido" title="Icone do status do pedido">
+                    </td>
+                    <td width="20%" style="padding:0 20px;" align="center">
+                      <img src="https://www.estacaodamodastore.com.br/arquivos/icone-pedido-feito.svg"
+                        alt="Icone do status do pedido" title="Icone Pedido Enviado">
+                    </td>
+                    <td width="600" align="left">
+                      <strong style="color: #343434; font-size: 14px; display: block;">PEDIDO FEITO</strong>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 3px;">
+                        <strong style="color: #343434;">Pedido:</strong> {{Pedido}} <br />
+                        {{Destinatario_Nome}}
+                      </p>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 3px;">
+                        <strong style="color: #343434;"></strong>
+                      </p>
+                      <p style="color: #979797; font-size: 12px; display: block; margin-top: 15px;">
+                        <strong style="color: #343434;">Endere&ccedil;o:</strong> {{Destinatario_Endereco}},
+                        {{Destinatario_Numero}}.<br />
+                        <strong style="color: #343434;">CEP:</strong> {{Destinatario_Cep}} / {{Destinatario_Cidade}} |
+                        {{Destinatario_Estado}}.<br />
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="15%"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Pedido Feito-->
 
       <tr>
-        <td align="center" colspan="3" style="background: #fAFAFA; height: 90px;">
+        <td colspan="3" height="100">&nbsp;</td>
+      </tr>
+
+
+      <tr>
+        <td align="center" colspan="3" height="90">
           <table>
             <tr>
               <td>
@@ -166,7 +195,7 @@
         </td>
       </tr>
       <tr>
-        <td align="center" colspan="3" style="background: #fAFAFA;">
+        <td align="center" colspan="3">
           <p
             style="color:#747474; font-family: 'Roboto', sans-serif; font-size: 14px; margin: 30px; text-align: justify; max-width: 600px;">
             <b style="color: #343434; font-family: 'Poppins', sans-serif;">
